@@ -1,20 +1,36 @@
 ---
 layout: default
+title: lechoo.github.io
 ---
 
-<div class="home">
+<section class="posts">
+    <ul class="posts-list">
+    {% for post in paginator.posts %}
+    	<li class="post">
+            <a href="{{ post.url }}" class="box transition">
+                <h2 class="post-title">{{ post.title }}</h2>
+                <span class="post-date">{{ post.date | date: "%B %e, %Y" }}</span>
+            </a>
+        </li>
 
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+	</ul>
+	<div class="bsg-pagination">
+	    <div class="bsg-container">
+            {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+                <a href="/" class="paginate previous">Newer</a>
+            {% else %}
+                <a href="/page{{paginator.previous_page}}" class="paginate previous">Newer</a>
+            {% endif %}
+            {% else %}
+                <span class="paginate previous">Newer</span>
+            {% endif %}
+            {% if paginator.next_page %}
+                <a href="/page{{paginator.next_page}}" class="paginate older">Older</a>
+            {% else %}
+                <span class="paginate older">Older</span>
+            {% endif %}
+	    </div>
+    </div>
+</section>
