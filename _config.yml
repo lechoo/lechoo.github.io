@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: pretty
-pygments: 
+highlighter: pygments
 auto: true
 server: true
 paginate: 3
