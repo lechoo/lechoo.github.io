@@ -6,7 +6,7 @@ server: true
 paginate: 3
 permalink: /:year/:month/:title
 
-sitename: myblog
+sitename: lechoo
 author :
  name: lechoo
  email: lechoo2u@gmail.com
