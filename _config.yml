@@ -1,15 +1,9 @@
 markdown: rdiscount
-permalink: pretty
 highlighter: pygments
 auto: true
 server: true
 paginate: 3
-permalink: /:year/:month/:title
-
+permalink: /:categories/:title
 sitename: lechoo
-author :
- name: lechoo
- email: lechoo2u@gmail.com
- github: lechoo
- twitter: lechoo
- disqus: lechoo
+name: lechoo
+email: lechoo2u@gmail.com
