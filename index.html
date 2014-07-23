@@ -1,36 +1,10 @@
 ---
 layout: default
-title: lechoo.github.io
+title: lechoo
 ---
 
-<section class="posts">
-    <ul class="posts-list">
-    {% for post in paginator.posts %}
-    	<li class="post">
-            <a href="{{ post.url }}" class="box transition">
-                <h2 class="post-title">{{ post.title }}</h2>
-                <span class="post-date">{{ post.date | date: "%B %e, %Y" }}</span>
-            </a>
-        </li>
-
-    {% endfor %}
-	</ul>
-	<div class="bsg-pagination">
-	    <div class="bsg-container">
-            {% if paginator.previous_page %}
-            {% if paginator.previous_page == 1 %}
-                <a href="/" class="paginate previous">Newer</a>
-            {% else %}
-                <a href="/page{{paginator.previous_page}}" class="paginate previous">Newer</a>
-            {% endif %}
-            {% else %}
-                <span class="paginate previous">Newer</span>
-            {% endif %}
-            {% if paginator.next_page %}
-                <a href="/page{{paginator.next_page}}" class="paginate older">Older</a>
-            {% else %}
-                <span class="paginate older">Older</span>
-            {% endif %}
-	    </div>
-    </div>
+<section class="intro">
+  <h1>Hello.</h1>
+  <p>My name is Adam Kaplan and I’m a designer from Poland.</p>
+  <hr>
 </section>
