@@ -1,18 +1,8 @@
     <footer role="contentinfo">
-      &copy; {{ '' | date: "%Y" }} lechoo.
-      Powered by <a href="//github.com/mojombo/jekyll">Jekyll</a>,
-      site source code hosted on <a href="//github.com/lechoo/lechoo.github.io">GitHub</a>.
+      <div class="container">
+        <p>&copy; {{ site.time | date: "%Y" }} lechoo</p>
+      </div>
     </footer>
-
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
-	<script src="js/scripts.js"></script>		
-	<script>
-      // Google Analytics
-      var _gaq=[['_setAccount','UA-20440416-10'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src='//www.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)})(document,'script');
-    </script>
-  </body>
-</html>
+  <script src="js/scripts.js"></script>
