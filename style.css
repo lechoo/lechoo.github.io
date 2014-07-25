@@ -109,15 +109,15 @@ layout: nil
 }
 
 html {
-  min-height: 100%;
   overflow-y: scroll;
+  min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;  
 }
 
 body {
-  font-size: 1rem;
   font-family: 'LatoLight', Helvetica, Arial, sans-serif;
+  font-size: 100%;
   line-height: 1.5;
   background-color: #F2F2F2;
   color: #444444;
@@ -128,11 +128,51 @@ body {
   hyphens: auto;     
 }
 
+@media (min-width: 40em) {
+  body { font-size: 125%; }
+}
+
 .container {
   max-width: 80em;
   width: 88%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-left: auto;
   margin-right: auto; 
 }
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #3269a0;
+  outline: 0;
+}
+
+a:focus {
+  color: #265079;
+  outline: thin dotted;
+}
+
+a:active {
+  -webkit-transform: translate(0, 1px);
+  -moz-transform: translate(0, 1px);
+  -ms-transform: translate(0, 1px);
+  -o-transform: translate(0, 1px);
+  transform: translate(0, 1px);
+  outline: 0;
+}
+
+::selection { background: rgba(255,255,255,0.1); }
+
+::-moz-selection { background: rgba(255,255,255,0.1); }
 
 {% include syntax.css %}
