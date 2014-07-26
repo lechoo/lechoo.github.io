@@ -176,6 +176,29 @@ a:active {
 
 ::-moz-selection { background: rgba(255,255,255,0.1); }
 
+p,
+ol,
+ul,
+dl,
+address {
+  margin-bottom: .75em;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+ul,
+ol {
+  margin: 0 0 1.5em 22px;
+  padding: 0;
+}
+
+li ul,
+li ol {
+  list-style-type: none;
+  font-size: 1.6rem;
+  margin: 1.5em 0;
+}
+
 /* Code */
 
 code,
