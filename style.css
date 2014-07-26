@@ -120,7 +120,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   background-color: #ffffff;
-  color: #444444;
+  color: #7b8993;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -142,7 +142,7 @@ body {
 }
 
 a {
-  color: #2299aa;
+  color: #2099aa;
   text-decoration: none;
   position: relative;
   -webkit-transition: all 0.3s ease;
