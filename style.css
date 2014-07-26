@@ -142,7 +142,7 @@ body {
 }
 
 a {
-  color: #4183c4;
+  color: #2099aa;
   text-decoration: none;
   position: relative;
   -webkit-transition: all 0.3s ease;
@@ -153,16 +153,17 @@ a {
 }
 
 a:hover {
-  color: #3269a0;
+  color: #197987;
   outline: 0;
 }
 
 a:focus {
-  color: #265079;
+  color: #516066;
   outline: thin dotted;
 }
 
 a:active {
+  color: #516066;
   -webkit-transform: translate(0, 1px);
   -moz-transform: translate(0, 1px);
   -ms-transform: translate(0, 1px);
