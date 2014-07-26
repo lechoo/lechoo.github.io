@@ -119,7 +119,7 @@ body {
   font-family: 'LatoLight', Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  background-color: #F2F2F2;
+  background-color: #ffffff;
   color: #444444;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -142,7 +142,7 @@ body {
 }
 
 a {
-  color: #2099aa;
+  color: #2299aa;
   text-decoration: none;
   position: relative;
   -webkit-transition: all 0.3s ease;
