@@ -110,16 +110,22 @@ layout: nil
 
 html {
   overflow-y: scroll;
+  background: #ffffff;
+  font-size: 62.5%;
   min-height: 100%;
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;  
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: #f3f5f6;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;  
 }
 
 body {
+  width: 100%;
   font-family: 'LatoLight', Helvetica, Arial, sans-serif;
-  font-size: 100%;
-  line-height: 1.5;
-  background-color: #ffffff;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  background-color: transparent;
   color: #7b8993;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -197,6 +203,16 @@ li ol {
   list-style-type: none;
   font-size: 1.6rem;
   margin: 1.5em 0;
+}
+
+hr {
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #c7ced6;
+  border-bottom: 1px solid #ffffff;
 }
 
 /* Code */
