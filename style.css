@@ -174,6 +174,9 @@ a:active {
   outline: 0;
 }
 
+ul,
+ol {list-style: none; }
+
 ::selection { background: rgba(255,255,255,0.1); }
 
 ::-moz-selection { background: rgba(255,255,255,0.1); }
