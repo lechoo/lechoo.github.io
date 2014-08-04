@@ -1,9 +1,9 @@
 ---
 ---
 
-@import "_normalize";
-@import "_variables";
-@import "_fonts";
+@import "normalize";
+@import "variables";
+@import "fonts";
 
 .container {
   max-width: 80em;
@@ -15,4 +15,4 @@
 }
 
 
-@import "_highlights";
+@import "highlights";

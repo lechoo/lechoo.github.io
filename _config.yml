@@ -4,10 +4,11 @@ sitename: lechoo
 email: lechoo2u@gmail.com
 markdown: kramdown
 highlighter: pygments
-permalink: /:categories/:title
+permalink: pretty
 auto: true
 server: true
 paginate: 3
+# Sass settings
 sass:
   sass_dir: _sass
   style: :expanded
