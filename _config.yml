@@ -1,9 +1,13 @@
-markdown: rdiscount
+# Configuration file
+name: lechoo
+sitename: lechoo
+email: lechoo2u@gmail.com
+markdown: kramdown
 highlighter: pygments
+permalink: /:categories/:title
 auto: true
 server: true
 paginate: 3
-permalink: /:categories/:title
-sitename: lechoo
-name: lechoo
-email: lechoo2u@gmail.com
+sass:
+  sass_dir: _sass
+  style: :expanded
