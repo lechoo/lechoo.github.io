@@ -1,0 +1,18 @@
+---
+---
+
+@import "_normalize";
+@import "_variables";
+@import "_fonts";
+
+.container {
+  max-width: 80em;
+  width: 88%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+
+@import "_highlights";
