@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[lechoo]]></title>
+  <link href="/atom.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2014-08-01T23:01:30+02:00</updated>
+  <id>/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    <email><![CDATA[lechoo2u@gmail.com]]></email>
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome to Jekyll!]]></title>
+    <link href="/welcome-to-jekyll"/>
+    <updated>2014-07-18T01:27:03+02:00</updated>
+    <id>/welcome-to-jekyll</id>
+    <content type="html"><![CDATA[]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Getting started]]></title>
+    <link href="/getting-started"/>
+    <updated>2013-03-18T00:00:00+01:00</updated>
+    <id>/getting-started</id>
+    <content type="html"><![CDATA[]]></content>
+  </entry>
+  
+</feed>
