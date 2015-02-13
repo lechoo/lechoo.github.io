@@ -1,27 +1,42 @@
-
 //
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4; 
+$basic-background: rgb(249, 249, 252) !default;
+$basic-text-color: rgb(51, 51, 51) !default;
+$basic-font-size: 16px !default;
+$basic-font-weight: 400 !default;
+$basic-lineheight: 1.618 !default;
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$body-background-color: rgb(255,255,255) !default;
+$body-text-color: rgb(51, 51, 51) !default;
+$body-font-size: 16px !default;
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+//Fonts
+$helvetica-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$sans-family: 'Open Sans', sans-serif !default;
+$monospace-family: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
-}
+$basic-font-family: $helvetica-family !default;
+$heading-font-family: $sans-family !default;
+$code-font-family: $monospace-family !default;
+$button-font-family:  !default;
+
+// Links
+$link-color: lighten($body-color, 40%) !default;
+$link-color-hover: darken($link-color, 10%) !default;
+$link-color-visited: darken($link-color, 10%) !default;
+
+// Headings
+$heading-weight: 400 !default;
+$heading-color: $body-color !default;
+
+$selection-color: rgb(86, 148, 241) !default;
+
+$max-width: 64em !default;
+
+// Breakpoints
+$sm: 30em !default;
+$md: 40em !default;
+$lg: 64em !default;
+$xl: 90em !default;

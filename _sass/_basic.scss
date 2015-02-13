@@ -1,7 +1,39 @@
 * {
   @include box-sizing(border-box);
 }
+
 *:before,
 *:after {
   @include box-sizing(border-box);
+}
+
+body {
+  font-family: $basic-font-family;
+  font-size: $basic-font-size;
+  line-height: $basic-line-height;
+  color: $body-text-color;
+  background-color: $body-background-color;
+}
+
+.container {
+  max-width: $max-width;
+  width: 88%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+// Selection
+
+::-moz-selection {
+  background-color: lighten($selection-color, 65%);
+  color: $selection-color;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: lighten($selection-color, 65%);
+  color: $selection-color;
+  text-shadow: none;
 }
