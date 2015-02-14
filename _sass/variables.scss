@@ -21,14 +21,16 @@ $heading-font-family: $sans-family !default;
 $code-font-family: $monospace-family !default;
 $button-font-family: $sans-family !default;
 
+$blue: #0076df !default;
+
 // Links
-$link-color: lighten($body-color, 40%) !default;
+$link-color: $blue !default;
 $link-color-hover: darken($link-color, 10%) !default;
 $link-color-visited: darken($link-color, 10%) !default;
 
 // Headings
 $heading-weight: 400 !default;
-$heading-color: $body-color !default;
+$heading-color: $blue !default;
 
 $selection-color: rgb(86, 148, 241) !default;
 
