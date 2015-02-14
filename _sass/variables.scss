@@ -18,8 +18,13 @@ $monospace-family: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
 $basic-font-family: 'LatoLight', Helvetica, Arial, sans-serif !default;
 $heading-font-family: $sans-family !default;
-$code-font-family: $monospace-family !default;
 $button-font-family: $sans-family !default;
+
+// Code
+$code-background-color: rgb(247, 247, 247);
+$code-font-family: Consolas, "Liberation Mono", Courier, monospace !default;
+$code-font-size: .9em;
+
 
 $blue: #0076df !default;
 
