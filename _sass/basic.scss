@@ -1,3 +1,24 @@
+@-webkit-viewport { 
+  width: device-width; 
+  zoom: 1.0; 
+}
+@-moz-viewport { 
+  width: device-width; 
+  zoom: 1.0; 
+}
+@-ms-viewport { 
+  width: device-width; 
+  zoom: 1.0; 
+}
+@-o-viewport { 
+  width: device-width; 
+  zoom: 1.0; 
+}
+@viewport { 
+  width: device-width; 
+  zoom: 1.0; 
+}
+
 * {
   @include box-sizing(border-box);
 }
@@ -9,7 +30,7 @@
 
 body {
   font-family: $basic-font-family;
-  font-size: $basic-font-size;
+  font-size: @include font-size(16px);
   line-height: $basic-line-height;
   color: $body-text-color;
   background-color: $body-background-color;
