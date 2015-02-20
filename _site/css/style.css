@@ -321,6 +321,26 @@ code {
   color: #009999;
 }
 
+@-webkit-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-moz-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-ms-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-o-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -335,8 +355,9 @@ code {
 }
 
 body {
-  font-family: "LatoLight", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  font-size: 1rem;
+  font-family: "LatoLight", Helvetica, Arial, sans-serif;
   line-height: 1.618;
   color: #333333;
   background-color: white;

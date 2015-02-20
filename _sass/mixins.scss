@@ -7,6 +7,21 @@
           box-sizing: $boxmodel;
 }
 
+// Font smoothing
+@mixin font-smoothing() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Hyphenate text
+@mixin hyphens() {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
 // Clearfix
 @mixin clearfix() {
   &:before,
@@ -29,6 +44,11 @@
   #{$property}: $value;
 }
 
+// Basic transitions
+@mixin transition($arguments) {
+  @include prefix-property(transition, unquote($arguments));
+}
+
 // Font size
 @mixin font-size($size) {
   @if unitless($size) {
@@ -36,4 +56,42 @@
   }
   font-size: $size;
   font-size: ($size / $basic-font-size) * 1rem;
+}
+
+// Font-face
+@mixin font-face($family,$src,$weight: normal,$style: normal) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$src}.eot');
+    src: url('#{$src}.eot?#iefix') format('embedded-opentype'),
+         url('#{$src}.woff') format('woff'),
+         url('#{$src}.ttf') format('truetype'),
+         url('#{$src}.svg##{$family}') format('svg');
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+// Media query mixin
+@mixin mq($breakpoint) {
+  @if $breakpoint == sm {
+    @media only screen and (min-width: $sm) {
+      @content;
+    }
+  }
+  @if $breakpoint == md {
+    @media only screen and (min-width: $md) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg {
+    @media only screen and (min-width: $lg) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl {
+    @media only screen and (min-width: $xl) {
+      @content;
+    }
+  }
 }

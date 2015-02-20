@@ -48,13 +48,13 @@ body {
 // Selection
 
 ::-moz-selection {
-  background-color: lighten($selection-color, 65%);
-  color: $selection-color;
+  background-color: $selection-color;
+  color: rgb(255, 255, 255);
   text-shadow: none;
 }
 
 ::selection {
-  background-color: lighten($selection-color, 65%);
-  color: $selection-color;
+  background-color: $selection-color;
+  color: rgb(255, 255, 255);
   text-shadow: none;
 }
