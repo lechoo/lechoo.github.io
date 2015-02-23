@@ -30,8 +30,9 @@ $blue: #0076df !default;
 
 // Links
 $link-color: $blue !default;
-$link-color-hover: darken($link-color, 10%) !default;
-$link-color-visited: darken($link-color, 10%) !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-visited-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
 
 // Headings
 $heading-weight: 400 !default;
