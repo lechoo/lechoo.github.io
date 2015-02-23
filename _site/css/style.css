@@ -373,13 +373,13 @@ body {
 }
 
 ::-moz-selection {
-  background-color: white;
-  color: #5694f1;
+  background-color: #5694f1;
+  color: white;
   text-shadow: none;
 }
 
 ::selection {
-  background-color: white;
-  color: #5694f1;
+  background-color: #5694f1;
+  color: white;
   text-shadow: none;
 }
