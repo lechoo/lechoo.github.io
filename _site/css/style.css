@@ -354,6 +354,14 @@ code {
   box-sizing: border-box;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-size: 16px;
   font-size: 1rem;
@@ -361,6 +369,15 @@ body {
   line-height: 1.618;
   color: #333333;
   background-color: white;
+}
+
+a {
+  color: #0076df;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #004e93;
+  text-decoration: underline;
 }
 
 .container {
