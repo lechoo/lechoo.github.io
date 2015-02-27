@@ -42,6 +42,7 @@ a {
 }
 
 .container {
+  @extend %clearfix;
   max-width: $max-width;
   width: 88%;
   padding-left: 1rem;

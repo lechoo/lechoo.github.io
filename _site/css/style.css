@@ -48,6 +48,17 @@
   text-transform: none;
 }
 
+.container {
+  *zoom: 1;
+}
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+
 pre {
   margin: 0;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
