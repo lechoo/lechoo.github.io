@@ -46,7 +46,7 @@
 
 // Basic transitions
 @mixin transition($arguments) {
-  @include prefix-property(transition, unquote($arguments));
+  @include prefix-property(transition, $arguments);
 }
 
 // Font size
