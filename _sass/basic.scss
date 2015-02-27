@@ -4,8 +4,8 @@ html {
   overflow-y: scroll;
   @include box-sizing(border-box);
   @include font-smoothing();
-  @include mq(md) {
-    font-size: 125%
+  @include mq(sm) {
+    font-size: 112.5%
   }
   @include mq(md) {
     font-size: 125%;
